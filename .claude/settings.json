@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const icons = require\\('lucide-react'\\); console.log\\(Object.keys\\(icons\\).filter\\(k => /dribbble|behance|drive|video|film|clapper|youtube|play/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e \"const icons = require\\('lucide-react'\\); console.log\\(['Trophy','Palette','Shirt','MonitorSmartphone'].map\\(k => [k, !!icons[k]]\\)\\)\")",
+      "Bash(npx --yes playwright --version)",
+      "Bash(cp /tmp/shot.mjs .)",
+      "Bash(node shot.mjs)",
+      "Bash(node -e ' *)",
+      "Bash(curl -sf http://localhost:3001 -o /dev/null)",
+      "Bash(curl -s http://localhost:3001)",
+      "Bash(curl -s \"http://localhost:3001/_next/static/chunks/%5Broot-of-the-server%5D__168j44g._.css\" -o /tmp/built.css)",
+      "Bash(curl -s \"http://localhost:3001/_next/static/chunks/%5Broot-of-the-server%5D__168j44g._.css\" -o /tmp/built2.css)"
+    ]
+  }
+}
