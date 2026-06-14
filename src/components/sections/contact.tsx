@@ -16,7 +16,7 @@ export function Contact() {
             Let&apos;s create something NotTheRegular.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Have a brand, product or video that needs a creative push?
+            Have a brand, project or video that needs a creative push?
             I&apos;m currently open to freelance and collaborative projects.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">

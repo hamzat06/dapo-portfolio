@@ -13,7 +13,7 @@ export function About() {
             <h2 className="mt-4 font-heading text-3xl font-semibold sm:text-4xl md:text-5xl">
               Design that breathes,
               <br />
-              builds, and converts.
+              moves, and tells a story.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
               {profile.bio}
