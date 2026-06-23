@@ -1,11 +1,11 @@
-import { Clapperboard, PenTool } from "lucide-react"
+import { Clapperboard, MonitorSmartphone, PenTool } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
 import { Reveal, RevealGroup, RevealItem } from "@/components/reveal"
 import { coreSkills, interpersonalSkills, tools } from "@/lib/data"
 
-const icons = [PenTool, Clapperboard]
+const icons = [PenTool, Clapperboard, MonitorSmartphone]
 
 export function Skills() {
   return (
@@ -16,11 +16,11 @@ export function Skills() {
             Skills
           </p>
           <h2 className="mt-4 font-heading text-3xl font-semibold sm:text-4xl md:text-5xl">
-            One toolkit, two disciplines.
+            One toolkit, three disciplines.
           </h2>
         </Reveal>
 
-        <RevealGroup className="mt-12 grid gap-6 sm:grid-cols-2">
+        <RevealGroup className="mt-12 grid gap-6 md:grid-cols-3">
           {coreSkills.map((skill, index) => {
             const Icon = icons[index]
             return (

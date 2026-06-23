@@ -1,28 +1,34 @@
-import { ArrowUpRight, Clapperboard, Palette, Trophy } from "lucide-react"
+import {
+  ArrowUpRight,
+  Clapperboard,
+  MonitorSmartphone,
+  Palette,
+  Trophy,
+} from "lucide-react"
 
 import { Reveal, RevealGroup, RevealItem } from "@/components/reveal"
 import { portfolioLinks } from "@/lib/data"
 
-const icons = [Palette, Trophy, Clapperboard]
+const icons = [MonitorSmartphone, Palette, Trophy, Clapperboard]
 
 export function Portfolios() {
   return (
-    <section id="work" className="border-b border-border">
+    <section id="portfolios" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase">
-            Selected Work
+            More Work
           </p>
           <h2 className="mt-4 font-heading text-3xl font-semibold sm:text-4xl md:text-5xl">
-            Explore the full portfolio.
+            See the full portfolios.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Brand identity work, social campaigns and video edits live
-            across a few platforms, sorted by discipline.
+            Case studies, shots and edits live across a few different
+            platforms, sorted by discipline.
           </p>
         </Reveal>
 
-        <RevealGroup className="mt-12 grid gap-6 sm:grid-cols-3">
+        <RevealGroup className="mt-12 grid gap-6 sm:grid-cols-2">
           {portfolioLinks.map((link, index) => {
             const Icon = icons[index]
             return (
